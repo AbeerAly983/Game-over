@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Home</title>
+
+    <!-- fontAwsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- All Games -->
+    <section id="games-container">
+      <!-- header -->
+      <header>
+        <img src="imgs/wraper.png" class="w-100" alt="header photo" />
+      </header>
+
+      <!-- nav-bar -->
+      <nav
+        class="navbar navbar-expand-lg position-sticky top-0 z-3 col-md-10 col-xl-9 m-auto">
+        <div class="container my-2">
+          <h5 class="mb-0 text-uppercase">
+            <img src="imgs/logo-sm.png" width="40" alt="" />
+            Game Reviews
+          </h5>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase active"
+                  aria-current="page"
+                  id="mmorpg"
+                  >mmorpg</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" id="shooter">shooter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" id="sailing">sailing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" id="permadeath"
+                  >permadeath</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" id="superhero">superhero</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" id="pixel">pixel</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- games -->
+      <div class="container my-5">
+        <div class="row gy-4" id="games"></div>
+      </div>
+    </section>
+
+    <!-- Games Details -->
+    <section id="games-details" class="d-none">
+      <div
+        class="container d-flex justify-content-between align-items-center my-5">
+        <h2>Game Details</h2>
+        <div class="close-btn">
+          <i class="fa-solid fa-xmark fs-3"></i>
+        </div>
+      </div>
+      <div class="container pt-5">
+        <div class="row game-details-container"></div>
+      </div>
+    </section>
+
+    <div class="load d-none">
+      <span class="loader"></span>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
